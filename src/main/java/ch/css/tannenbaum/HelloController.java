@@ -1,5 +1,6 @@
 package ch.css.tannenbaum;
 
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
@@ -42,4 +43,10 @@ public class HelloController {
 
         textAreaZeichnungsFlaeche.setText(t.getZeichnung());
     }
+
+    @FXML
+    private void ButtonExitClick(){
+        Platform.exit();
+    }
+
 }
