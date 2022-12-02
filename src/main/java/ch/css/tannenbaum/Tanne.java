@@ -50,10 +50,9 @@ public class Tanne {
         zeichnung = "";
         zeichneKrone();
         zeichneStamm();
-
     }
 
-    private void zeichneKrone() {
+     private void zeichneKrone() {
         for (int i = 1; i <= kronenhoehe; ++i)
             zeichneZeile(kronenhoehe - i, 2 * i - 1);
     }
@@ -73,4 +72,30 @@ public class Tanne {
 
         zeichnung += "\n";
     }
+
+   /* private void zeichneStamm(){
+        for (int i = 0; i < stammhoehe; i++) {
+            int leerZeichen = kronenhoehe -(int)Math.ceil((stammbreite)/2);
+
+            zeileZeichnen(leerZeichen, stammbreite);
+        }
+    }
+
+    private void zeichneKrone(){
+        for (int i = 0; i < kronenhoehe; i++) {
+            zeileZeichnen(kronenhoehe - i, 2 * i -1);
+        }
+    }
+
+    private void zeileZeichnen(int anzahlLeerzeichen, int anzahlSterne){
+        System.out.println(" ");
+
+        for (int i = -1; i < anzahlLeerzeichen; i++) {
+            System.out.print(" ");
+        }
+
+        for (int i = 0; i < anzahlSterne; i++) {
+            System.out.print("*");
+        }
+    } */
 }
